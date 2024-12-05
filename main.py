@@ -1,7 +1,9 @@
 #!./myenv/bin/python3
 import sys
+import os
 import argparse
 from antlr4 import *
+sys.path.append(os.path.join(os.path.dirname(__file__), "generated"))
 from dreben_langLexer import dreben_langLexer
 from dreben_langParser import dreben_langParser
 from dreben_langVisitor import dreben_langVisitor
